@@ -1,0 +1,49 @@
+.rippleOBJ {
+    --ripple-grow: 150%;
+    --ripple-opacity: 1;
+    --ripple-y: 0;
+    --ripple-x: 0;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: inherit;
+}
+.rippleOBJ::after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.87);
+
+    filter: brightness(2.5);
+    width: 0%;
+    opacity: 0;
+    transform: translate(-50%,-50%);
+    inset:  var(--ripple-y) var(--ripple-x);
+    aspect-ratio: 1;
+    border-radius: 100%;
+    animation: none;
+}
+
+
+.rippleOBJ-a::after {
+    animation: ripple 500ms ease-out;
+}
+
+
+@keyframes ripple {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+
+    50% {
+        opacity: var(--ripple-opacity);
+
+    }
+    100% {
+        opacity: 0;
+        width: var(--ripple-grow);
+    }
+}
