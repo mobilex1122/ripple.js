@@ -1,5 +1,5 @@
 # Ripple.js
-##### Simple android ripple generator for web
+##### Simple android ripple effect for web.
 
 ## Installation and setup:
 
