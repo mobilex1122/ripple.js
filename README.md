@@ -9,7 +9,7 @@
     <!DOCTYPE html>
     <html lang="en">
     <head>
-        <link rel="stylesheet" href="./ripplejs.css".css">
+        <link rel="stylesheet" href="./ripplejs.css">
     </head>
     ```
 - Link JS: 
