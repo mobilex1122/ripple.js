@@ -1,6 +1,8 @@
 # Ripple.js
 **Very simple Javascript based android ripple effect for web.**
 
+[Example](mobilex1122.github.io/ripple.js/example.html)
+
 ## Installation and setup:
 
 - Download ripple.js 
